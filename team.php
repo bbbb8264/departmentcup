@@ -4,7 +4,6 @@
 	if ($conn->connect_error) {
 	    die("Connection failed: " . $conn->connect_error);
 	}
-	print_r($_ENV);
 ?>
 <!DOCTYPE html>
 <html>
@@ -86,6 +85,7 @@
 				}
 				echo	  '</tbody>
 						</table>';
+						echo $_ENV['OPENSHIFT_DATA_DIR'].'1.jpg';
 			}
 		?>
 	</div>
