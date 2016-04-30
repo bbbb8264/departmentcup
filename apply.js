@@ -35,9 +35,7 @@ function addplayer(){
 		'<option value="0">內野</option><option value="1">外野</option><option value="2">投手</option></select>'+
 		'</div><div class="inline field"><div class="ui checkbox"><input type="checkbox" tabindex="0" class="hidden">'+
 		'<label>是否參加明日之星賽<br>(大二以下非校隊隊員可參加)</label></div></div><div class="field" style="opacity: 0;">'+
-		'<label>明日之星賽守備位置</label><select class="ui dropdown disabled"><option value="0">投手</option>'+
-		'<option value="1">一壘手</option><option value="2">二壘手</option><option value="3">三壘手</option>'+
-		'<option value="4">游擊手</option><option value="5">捕手</option><option value="6">外野手</option>'+
+		'<label>明日之星賽守備位置</label><select class="ui dropdown disabled"><option value="0">內野</option><option value="1">外野</option><option value="2">投手</option>'+
 		'</select></div></form><i class="big remove icon"></i><input type="file" accept="image/*" style="display:none;"></div>');
 	var newplayer = $(".membercontainer").children()[$(".membercontainer").children().length-1];
 	$(newplayer).find(".checkbox").checkbox();
@@ -90,7 +88,7 @@ function addplayer(){
 	      buttons: {
 	        "確定": function() {
 	          $( this ).dialog( "close" );
-		          	if($(newplay).data("id") == null){
+		          	if($(newplayer).data("id") == null){
 		          		$(newplayer).animate({
 							opacity:0
 						},600,function(){
@@ -100,7 +98,7 @@ function addplayer(){
 		          		$.ajax({
 		                    url : "deletemember.php",
 		                    type : "POST",
-		                    data : {id:$(newplay).data("id")},
+		                    data : {id:$(newplayer).data("id")},
 		                    success : function(data) {
 		                        if(data == "success"){
 		                            $(newplayer).animate({
@@ -481,9 +479,7 @@ $(document).ready(function(){
 		'<option value="1">外野</option><option value="2">投手</option></select></div>'+
 		'<div class="inline field"><div class="ui checkbox"><input type="checkbox" tabindex="0" class="hidden">'+
 		'<label>是否參加明日之星賽<br>(大二以下非校隊隊員可參加)</label></div></div><div class="field" style="opacity: 0;">'+
-		'<label>明日之星賽守備位置</label><select class="ui dropdown disabled"><option value="0">投手</option>'+
-		'<option value="1">一壘手</option><option value="2">二壘手</option><option value="3">三壘手</option>'+
-		'<option value="4">游擊手</option><option value="5">捕手</option><option value="6">外野手</option>'+
+		'<label>明日之星賽守備位置</label><select class="ui dropdown disabled"><option value="0">內野</option><option value="1">外野</option><option value="2">投手</option>'+
 		'</select></div></form><form class="ui form contact"><div class="inline field"><div class="ui checkbox">'+
 		'<input type="checkbox" tabindex="0" class="hidden" checked><label>隊長是否兼職領隊</label></div>'+
 		'</div><div class="field" style="display:none;"><label>領隊姓名</label><input type="text">'+

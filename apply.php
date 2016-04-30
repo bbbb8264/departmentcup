@@ -150,14 +150,10 @@
 								</div>
 								<div class="field" '.($row['participate2']?'':'style="opacity: 0;"').'>
 								    <label>明日之星賽守備位置</label>
-								    <select class="ui dropdown '.($row['participate1']?'':'disabled').'">
-								        <option value="0" '.($row['field2']==0?'selected':'').'>投手</option>
-										<option value="1" '.($row['field2']==1?'selected':'').'>一壘手</option>
-										<option value="2" '.($row['field2']==2?'selected':'').'>二壘手</option>
-										<option value="3" '.($row['field2']==3?'selected':'').'>三壘手</option>
-										<option value="4" '.($row['field2']==4?'selected':'').'>游擊手</option>
-										<option value="5" '.($row['field2']==5?'selected':'').'>捕手</option>
-										<option value="6" '.($row['field2']==6?'selected':'').'>外野手</option>
+								    <select class="ui dropdown '.($row['participate2']?'':'disabled').'">
+								        <option value="0" '.($row['field2']==0?'selected':'').'>內野</option>
+										<option value="1" '.($row['field2']==1?'selected':'').'>外野</option>
+										<option value="2" '.($row['field2']==2?'selected':'').'>投手</option>
 								    </select>
 								</div>
 							</form>
@@ -284,13 +280,9 @@
 									<div class="field" '.($row['participate2']?'':'style="opacity: 0;"').'>
 										<label>明日之星賽守備位置</label>
 										<select class="ui dropdown '.($row['participate2']?'':'disabled').'">
-											<option value="0" '.($row['field2']==0?'selected':'').'>投手</option>
-											<option value="1" '.($row['field2']==1?'selected':'').'>一壘手</option>
-											<option value="2" '.($row['field2']==2?'selected':'').'>二壘手</option>
-											<option value="3" '.($row['field2']==3?'selected':'').'>三壘手</option>
-											<option value="4" '.($row['field2']==4?'selected':'').'>游擊手</option>
-											<option value="5" '.($row['field2']==5?'selected':'').'>捕手</option>
-											<option value="6" '.($row['field2']==6?'selected':'').'>外野手</option>
+											<option value="0" '.($row['field2']==0?'selected':'').'>內野</option>
+											<option value="1" '.($row['field2']==1?'selected':'').'>外野</option>
+											<option value="2" '.($row['field2']==2?'selected':'').'>投手</option>
 										</select>
 									</div>
 								</form>
