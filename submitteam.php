@@ -97,8 +97,8 @@
 			$dir = 'leaderpictures';
 			$filename = mysqli_insert_id($conn).'.'.$extend;
 			//move_uploaded_file($_FILES['leaderpic']['tmp_name'], $_ENV['OPENSHIFT_REPO_DIR'].'leaderpictures/'.$filename)
-			move_uploaded_file($_FILES['leaderpic']['tmp_name'], $_ENV['OPENSHIFT_DIR_DIR'].'leaderpictures/'.$filename);
-			copy($_ENV['OPENSHIFT_DIR_DIR'].'leaderpictures/'.$filename, $_ENV['OPENSHIFT_REPO_DIR'].'leaderpictures/'.$filename);
+			move_uploaded_file($_FILES['leaderpic']['tmp_name'], $_ENV['OPENSHIFT_DATA_DIR'].'leaderpictures/'.$filename);
+			copy($_ENV['OPENSHIFT_DATA_DIR'].'leaderpictures/'.$filename, $_ENV['OPENSHIFT_REPO_DIR'].'leaderpictures/'.$filename);
 		}else{
 			$filename = substr($_FILES['leaderpic']['name'], 0,strrpos($_FILES['leaderpic']['name'], "."));
 			$extend = substr($_FILES['leaderpic']['name'], strrpos($_FILES['leaderpic']['name'], ".")+1,strlen($_FILES['leaderpic']['name'])-strrpos($_FILES['leaderpic']['name'], ".")-1);
@@ -109,7 +109,7 @@
 			$filename = $row['id'].'.'.$extend;
 			//move_uploaded_file($_FILES['leaderpic']['tmp_name'], $_ENV['OPENSHIFT_REPO_DIR'].'leaderpictures/'.$filename);
 			move_uploaded_file($_FILES['leaderpic']['tmp_name'], $_ENV['OPENSHIFT_DATA_DIR'].'leaderpictures/'.$filename);
-			copy($_ENV['OPENSHIFT_DIR_DIR'].'leaderpictures/'.$filename, $_ENV['OPENSHIFT_REPO_DIR'].'leaderpictures/'.$filename);
+			copy($_ENV['OPENSHIFT_DATA_DIR'].'leaderpictures/'.$filename, $_ENV['OPENSHIFT_REPO_DIR'].'leaderpictures/'.$filename);
 		}
 	}
 	for($i = 0;$i < $_POST['memberamount'];$i++){
