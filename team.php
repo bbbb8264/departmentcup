@@ -85,7 +85,7 @@
 				}
 				echo	  '</tbody>
 						</table>';
-						echo $_ENV['OPENSHIFT_DATA_DIR'].'1.jpg';
+						echo '<img src="'.$_ENV['OPENSHIFT_DATA_DIR'].'1.jpg">';
 			}
 		?>
 	</div>
