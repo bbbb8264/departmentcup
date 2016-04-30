@@ -96,7 +96,7 @@
 			$conn->query($sql);
 			$dir = 'leaderpictures';
 			$filename = mysqli_insert_id($conn).'.'.$extend;
-			move_uploaded_file($_FILES['leaderpic']['tmp_name'], $_ENV['OPENSHIFT_DATA_DIR'].$filename);
+			move_uploaded_file($_FILES['leaderpic']['tmp_name'], $_ENV['OPENSHIFT_REPO_DIR'].$filename);
 		}else{
 			$filename = substr($_FILES['leaderpic']['name'], 0,strrpos($_FILES['leaderpic']['name'], "."));
 			$extend = substr($_FILES['leaderpic']['name'], strrpos($_FILES['leaderpic']['name'], ".")+1,strlen($_FILES['leaderpic']['name'])-strrpos($_FILES['leaderpic']['name'], ".")-1);
@@ -105,7 +105,7 @@
 			$conn->query($sql);
 			$dir = 'leaderpictures';
 			$filename = $row['id'].'.'.$extend;
-			move_uploaded_file($_FILES['leaderpic']['tmp_name'], $_ENV['OPENSHIFT_DATA_DIR'].$filename);
+			move_uploaded_file($_FILES['leaderpic']['tmp_name'], $_ENV['OPENSHIFT_REPO_DIR'].$filename);
 		}
 	}
 	for($i = 0;$i < $_POST['memberamount'];$i++){
