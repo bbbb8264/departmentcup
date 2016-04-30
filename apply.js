@@ -423,7 +423,7 @@ function activatemember(){
 		      buttons: {
 		        "確定": function() {
 		          	$( this ).dialog( "close" );
-		          	if($(newplay).data("id") == null){
+		          	if($(newplayer).data("id") == null){
 		          		$(newplayer).animate({
 							opacity:0
 						},600,function(){
@@ -433,7 +433,7 @@ function activatemember(){
 		          		$.ajax({
 		                    url : "deletemember.php",
 		                    type : "POST",
-		                    data : {id:$(newplay).data("id")},
+		                    data : {id:$(newplayer).data("id")},
 		                    success : function(data) {
 		                        if(data == "success"){
 		                            $(newplayer).animate({

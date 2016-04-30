@@ -4,7 +4,6 @@
 	if ($conn->connect_error) {
 	    die("Connection failed: " . $conn->connect_error);
 	}
-	print_r($_ENV);
 ?>
 <!DOCTYPE html>
 <html>
