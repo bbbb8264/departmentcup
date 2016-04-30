@@ -1,0 +1,12 @@
+.contenttitle{
+	text-align: center;
+    margin-bottom: 40px;
+    font-size: 25px;
+}
+.structured.table{
+	text-align: center;
+    width: 1000px;
+    margin: auto;
+    margin-bottom: 40px!important;
+    word-break: break-all;
+}

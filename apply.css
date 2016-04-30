@@ -1,0 +1,177 @@
+.notlogintext{
+	text-align: center;
+	line-height:120px; 
+	font-size: 30px;
+}
+.notloginbuttonwrapper{
+	width:102px;
+	margin:auto;
+	margin-bottom: 50px;
+}
+.logintext{
+	text-align: center;
+	margin-bottom:30px;
+	font-size: 25px;
+}
+#registerbutton{
+	width:200px;
+	height:60px;
+	line-height: 60px;
+	font-size: 22px;
+	margin: auto;
+	background-color: rgb(180,180,180);
+	text-align: center;
+	margin-bottom: 30px;
+}
+#registerbutton:hover{
+	cursor: pointer;
+	background-color: rgb(195,195,195);
+}
+.subtitle{
+	width:1000px;
+	border-bottom-style: solid;
+	border-bottom-width: 0.5px;
+	font-size: 25px;
+	margin: auto;
+	margin-bottom: 30px;
+}
+.leadertitle{
+	border-bottom-style: solid;
+	border-bottom-width: 0.5px;
+	font-size: 25px;
+	margin-bottom: 10px;
+}
+.leader{
+	width:1000px;
+	margin:auto;
+}
+.member{
+	display:flex;
+}
+.member .memberinformation{
+	
+}
+.member .memberpic{
+	margin:20px 0px 0px 20px;
+	width: 160px;
+	text-align: center;
+}
+.memberpic img{
+	margin: auto;
+	border-style: outset;
+    border-width: 1px;
+    padding:5px;
+}
+.memberpic img:hover{
+	cursor:pointer;
+}
+.memberpic img:active{
+	border-style: inset;
+}
+.member .textinput input{
+	width:200px!important;
+}
+.member form{
+	margin-left: 55px;
+}
+.member{
+	margin-bottom: 30px;
+}
+.member .starinput .dropdown.selection{
+	min-height: 0px!important;
+	min-width: 0px!important;
+	width:150px!important;
+}
+.member .contact .field input{
+	width:200px!important;
+}
+.teamform{
+	width:400px;
+	margin: 30px auto 30px auto;
+}
+.teamform input{
+	width:300px!important;
+}
+.member2{
+	display: flex;
+}
+.member2 .memberpic{
+	margin:20px 0px 0px 60px;
+	width: 160px;
+	text-align: center;
+}
+.member2 .textinput input{
+	width:250px!important;
+}
+.member2 form{
+	margin-left: 80px;
+}
+.member2{
+	margin-bottom: 30px;
+	position: relative;
+	border-style: groove;
+    padding: 20px 0px 30px 0px;
+}
+.member2 .starinput .dropdown.selection{
+	min-height: 0px!important;
+	min-width: 0px!important;
+	width:200px!important;
+}
+.member2 .contact .field input{
+	width:250px!important;
+}
+.membercontainer{
+	width:1000px;
+	margin:auto;
+}
+.member2 i.remove{
+	position: absolute;
+	top:0;
+	right:0;
+	color:rgb(255,0,0);
+	opacity: 0;
+}
+.member2 i.remove:hover{
+	color:rgb(230,0,0);
+	cursor:pointer;
+}
+.buttonwrapper{
+	width: 600px;
+    margin: auto;
+    display: flex;
+}
+.savebutton{
+	width: 100px;
+    height: 50px;
+    position: relative;
+    text-align: center;
+    line-height: 50px;
+    background-color: #4DD156;
+    margin-left: 93px;
+    margin-top: 25px;
+    border-radius: 5px;
+}
+.savebutton:hover{
+	background-color: #5De166;
+	cursor:pointer;
+}
+#addplayerbutton{
+	width: 300px;
+    height: 84px;
+    padding: 10px 30px 10px 30px;
+    background-color: rgb(180,180,180);
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+#addplayerbutton:hover{
+	cursor:pointer;
+	background-color: rgb(200,200,200);
+}
+.ui.loader:before{
+	top: -3px!important;
+    left: 35%!important;
+}
+.ui.loader:after{
+	top: -3px!important;
+    left: 35%!important;
+}
