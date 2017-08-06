@@ -2,4 +2,4 @@
 
 只需要透過FB登入就可以進行報名跟投票，但目前只剩下投票功能
 
-網址連結：https://departmentcup-bbbb8264.rhcloud.com/apply.php
+網址連結：https://departmentcup-bbbb8264.rhcloud.com/vote.php
